@@ -1,0 +1,54 @@
+name: build-test-benchmark
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test-and-benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Testes
+        id: tests
+        run: |
+          set +e
+          dotnet test -c Release --logger "console;verbosity=normal" 2>&1 | tee test-output.log
+          code=${PIPESTATUS[0]}
+          set -e
+          {
+            echo "## Testes"
+            echo '```'
+            grep -E "^\s+(Passed|Failed|Skipped) " test-output.log | sed 's/^ *//' | sort || true
+            grep -E "(Passed!|Failed!)" test-output.log || true
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+
+      - name: Benchmark
+        if: steps.tests.outputs.code == '0' && (github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[benchmark]'))
+        run: OUT="$PWD/results" bash scripts/run-benchmark.sh
+
+      - name: Publica resultados no repositório
+        if: steps.tests.outputs.code == '0' && (github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[benchmark]'))
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results
+          if git diff --cached --quiet; then echo "Nada novo"; exit 0; fi
+          git commit -m "Resultados do benchmark e dos testes (GitHub Actions, $(nproc) núcleos)"
+          git push
+
+      - name: Falha se os testes falharam
+        if: steps.tests.outputs.code != '0'
+        run: exit 1
