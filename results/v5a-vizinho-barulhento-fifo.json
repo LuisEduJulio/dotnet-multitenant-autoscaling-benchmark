@@ -1,0 +1,394 @@
+{
+  "name": "v5a-vizinho-barulhento-fifo",
+  "users": 2000,
+  "noisyUsers": 1000,
+  "slaMs": 3000,
+  "durationSeconds": 120,
+  "overall": {
+    "requests": 94471,
+    "ok": 94471,
+    "rejected503": 0,
+    "timeouts": 0,
+    "otherErrors": 0,
+    "okWithinSlaPercent": 100,
+    "allWithinSlaPercent": 100,
+    "p50Ms": 1850,
+    "p95Ms": 1920,
+    "p99Ms": 1942,
+    "maxMs": 2057,
+    "rps": 787.3,
+    "rejectedP95Ms": 0
+  },
+  "steadyState": {
+    "requests": 47688,
+    "ok": 47688,
+    "rejected503": 0,
+    "timeouts": 0,
+    "otherErrors": 0,
+    "okWithinSlaPercent": 100,
+    "allWithinSlaPercent": 100,
+    "p50Ms": 1866,
+    "p95Ms": 1924,
+    "p99Ms": 1944,
+    "maxMs": 2057,
+    "rps": 794.8,
+    "rejectedP95Ms": 0
+  },
+  "byKind": {
+    "integracao": {
+      "requests": 65709,
+      "ok": 65709,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1848,
+      "p95Ms": 1920,
+      "p99Ms": 1941,
+      "maxMs": 2046,
+      "rps": 547.6,
+      "rejectedP95Ms": 0
+    },
+    "usuario": {
+      "requests": 28762,
+      "ok": 28762,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1854,
+      "p95Ms": 1921,
+      "p99Ms": 1943,
+      "maxMs": 2057,
+      "rps": 239.7,
+      "rejectedP95Ms": 0
+    }
+  },
+  "byTenant": {
+    "rede-01": {
+      "requests": 65709,
+      "ok": 65709,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1848,
+      "p95Ms": 1920,
+      "p99Ms": 1941,
+      "maxMs": 2046,
+      "rps": 547.6,
+      "rejectedP95Ms": 0
+    },
+    "rede-02": {
+      "requests": 3263,
+      "ok": 3263,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1853,
+      "p95Ms": 1922,
+      "p99Ms": 1940,
+      "maxMs": 2023,
+      "rps": 27.2,
+      "rejectedP95Ms": 0
+    },
+    "rede-03": {
+      "requests": 3265,
+      "ok": 3265,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1853,
+      "p95Ms": 1921,
+      "p99Ms": 1945,
+      "maxMs": 1997,
+      "rps": 27.2,
+      "rejectedP95Ms": 0
+    },
+    "rede-04": {
+      "requests": 3191,
+      "ok": 3191,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1853,
+      "p95Ms": 1923,
+      "p99Ms": 1944,
+      "maxMs": 1997,
+      "rps": 26.6,
+      "rejectedP95Ms": 0
+    },
+    "rede-05": {
+      "requests": 3172,
+      "ok": 3172,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1855,
+      "p95Ms": 1922,
+      "p99Ms": 1944,
+      "maxMs": 2007,
+      "rps": 26.4,
+      "rejectedP95Ms": 0
+    },
+    "rede-06": {
+      "requests": 3181,
+      "ok": 3181,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1856,
+      "p95Ms": 1921,
+      "p99Ms": 1943,
+      "maxMs": 1983,
+      "rps": 26.5,
+      "rejectedP95Ms": 0
+    },
+    "rede-07": {
+      "requests": 3147,
+      "ok": 3147,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1854,
+      "p95Ms": 1920,
+      "p99Ms": 1942,
+      "maxMs": 2057,
+      "rps": 26.2,
+      "rejectedP95Ms": 0
+    },
+    "rede-08": {
+      "requests": 3202,
+      "ok": 3202,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1853,
+      "p95Ms": 1920,
+      "p99Ms": 1940,
+      "maxMs": 1997,
+      "rps": 26.7,
+      "rejectedP95Ms": 0
+    },
+    "rede-09": {
+      "requests": 3146,
+      "ok": 3146,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1856,
+      "p95Ms": 1922,
+      "p99Ms": 1943,
+      "maxMs": 2037,
+      "rps": 26.2,
+      "rejectedP95Ms": 0
+    },
+    "rede-10": {
+      "requests": 3195,
+      "ok": 3195,
+      "rejected503": 0,
+      "timeouts": 0,
+      "otherErrors": 0,
+      "okWithinSlaPercent": 100,
+      "allWithinSlaPercent": 100,
+      "p50Ms": 1853,
+      "p95Ms": 1924,
+      "p99Ms": 1944,
+      "maxMs": 2027,
+      "rps": 26.6,
+      "rejectedP95Ms": 0
+    }
+  },
+  "timeline": [
+    {
+      "fromSecond": 0,
+      "rps": 360.8,
+      "p95Ms": 301,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 5,
+      "rps": 829.4,
+      "p95Ms": 501,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 10,
+      "rps": 847.2,
+      "p95Ms": 803,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 15,
+      "rps": 845.8,
+      "p95Ms": 1140,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 20,
+      "rps": 850,
+      "p95Ms": 1502,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 25,
+      "rps": 855.8,
+      "p95Ms": 1856,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 30,
+      "rps": 795.2,
+      "p95Ms": 1931,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 35,
+      "rps": 794.6,
+      "p95Ms": 1922,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 40,
+      "rps": 793,
+      "p95Ms": 1927,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 45,
+      "rps": 792.2,
+      "p95Ms": 1924,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 50,
+      "rps": 795.4,
+      "p95Ms": 1923,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 55,
+      "rps": 797.2,
+      "p95Ms": 1924,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 60,
+      "rps": 794,
+      "p95Ms": 1924,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 65,
+      "rps": 794.4,
+      "p95Ms": 1925,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 70,
+      "rps": 795.4,
+      "p95Ms": 1929,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 75,
+      "rps": 792.8,
+      "p95Ms": 1930,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 80,
+      "rps": 795,
+      "p95Ms": 1925,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 85,
+      "rps": 796.4,
+      "p95Ms": 1916,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 90,
+      "rps": 794.6,
+      "p95Ms": 1918,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 95,
+      "rps": 796.2,
+      "p95Ms": 1919,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 100,
+      "rps": 796.4,
+      "p95Ms": 1918,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 105,
+      "rps": 795.6,
+      "p95Ms": 1928,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 110,
+      "rps": 790,
+      "p95Ms": 1928,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    },
+    {
+      "fromSecond": 115,
+      "rps": 796.8,
+      "p95Ms": 1927,
+      "withinSlaPercent": 100,
+      "readyReplicas": 4
+    }
+  ],
+  "replicaSeconds": 480,
+  "maxReadyReplicas": 4,
+  "secondsBelowSla": 0
+}
